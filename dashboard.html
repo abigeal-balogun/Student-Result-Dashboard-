@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1>Student Result Dashboard</h1>
+            <p>Academic performance overview</p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- STUDENT INFORMATION -->
+        <section class="student-section">
+            <h2 class="section-title">Student Information</h2>
+
+            <div class="student-info">
+                <div class="info-item">
+                    <span class="label">Student Name</span>
+                    <strong id="student-name">Loading...</strong>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Student ID</span>
+                    <strong id="student-id">Loading...</strong>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Programme</span>
+                    <strong id="student-programme">Loading...</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSE RESULTS -->
+        <section class="results-section">
+            <h2 class="section-title">Course Results</h2>
+
+            <!-- dashboard.js adds the course cards here -->
+            <div class="course-grid" id="course-container"></div>
+        </section>
+
+        <!-- RESULT SUMMARY -->
+        <section class="summary-section">
+            <h2 class="section-title">Result Summary</h2>
+
+            <div class="summary-grid">
+                <div class="card summary">
+                    <span class="label">Total Courses</span>
+                    <span class="value" id="total-courses">0</span>
+                </div>
+
+                <div class="card summary">
+                    <span class="label">Average Score</span>
+                    <span class="value" id="average-score">0%</span>
+                </div>
+
+                <div class="card summary">
+                    <span class="label">Overall Result</span>
+                    <span class="value" id="overall-result">--</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Student Dashboard | Frontend Development Class</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
