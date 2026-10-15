@@ -1,0 +1,195 @@
+/* ============================
+   RESET & BASE
+   ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background: ghostwhite;
+    color: darkslategray;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ============================
+   HEADER
+   ============================ */
+.header {
+    background: midnightblue;
+    color: white;
+    padding: 28px 0;
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header p {
+    font-size: 0.9rem;
+    color: lightslategray;
+    margin-top: 4px;
+}
+
+
+/* ============================
+   SECTION CARDS
+   ============================ */
+.student-section,
+.results-section,
+.summary-section {
+    background: white;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: darkslategray;
+    margin-bottom: 14px;
+}
+
+/* ============================
+   STUDENT INFORMATION
+   ============================ */
+.student-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.info-item {
+    background: ghostwhite;
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.info-item strong {
+    font-size: 0.85rem;
+    color: black;
+}
+
+.label {
+    font-size: 0.72rem;
+    color: slategray;
+}
+
+
+/* ============================
+   COURSE RESULTS
+   ============================ */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    min-height: 10px;
+}
+
+.course-card {
+    background: ghostwhite;
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-left: 4px solid lightslategray;
+}
+
+.course-card.pass {
+    border-left-color: forestgreen;
+}
+
+.course-card.fail {
+    border-left-color: crimson;
+}
+
+.score {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+}
+
+.status {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+
+/* ============================
+   RESULT SUMMARY
+   ============================ */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.summary {
+    background: ghostwhite;
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+}
+
+
+/* ============================
+   PASS / FAIL COLOURS
+   ============================ */
+.pass-text {
+    color: forestgreen;
+}
+
+.fail-text {
+    color: crimson;
+}
+
+
+/* ============================
+   FOOTER
+   ============================ */
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: slategray;
+    padding: 24px 0;
+}
+
+
+/* ============================
+   RESPONSIVE (phones)
+   ============================ */
+@media (max-width: 640px) {
+    .student-info,
+    .course-grid,
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
